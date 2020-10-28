@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image shadow</title>
+    <style>
+        body {
+            background-color: #333;
+        }
+        .shadow {
+            border: 5px solid white;
+            display: inline-block;
+            padding: 10px;
+            position: relative;
+        }
+        .shadow::after {
+            content: "";
+            display: block;
+            width: 400px;
+            height: 600px;
+            position: absolute;
+            top: 10px;
+            background: linear-gradient(black, transparent, black);
+        }
+        img {
+            vertical-align: bottom;
+        }
+    </style>
+</head>
+<body>
+    
+    <figure class="shadow">
+        <img src="https://i.pinimg.com/474x/75/a9/3c/75a93c988c2f1a16ab61d5a940d9307d.jpg" alt="">
+    </figure>
+
+</body>
+</html>

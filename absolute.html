@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS ABSOLUTE</title>
+    <style>
+        body {
+            background-color: #333;
+        }
+        div {
+            width: 100px;
+            height: 100px;
+        }
+        .div-1 {
+            background-color: yellow;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+        .div-2 {
+            background-color: blue;
+            position: absolute;
+            left: 50px;
+            bottom: 50px;
+            z-index: -1;
+        }
+        .div-3 {
+            background-color: red;
+            position: absolute;
+            left: 100px;
+            bottom: 100px;
+            z-index: -2;
+        }
+    </style>
+</head>
+<body>
+
+        <div class="div-1">1</div>
+        <div class="div-2">2</div>
+        <div class="div-3">3</div>
+
+</body>
+</html>
